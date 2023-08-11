@@ -1,3 +1,4 @@
+// eslint-disable-next-line
 import { BrowserRouter, Navigate, Routes, Route } from "react-router-dom";
 import HomePage from "scenes/homePage";
 import LoginPage from "scenes/loginPage";
@@ -22,7 +23,7 @@ function App() {
       <CssBaseline />
       <Routes>
         <Route path="/" element={<LoginPage />} />
-        <Route path="/home " element={<HomePage />} />
+        <Route path="/home" element={<HomePage />} />
         <Route path="/profile/:userId" element={<ProfilePage />} />
 
       </Routes>
